@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp"
+   >
+
+
+    <VideoView
+        android:id="@+id/simpleVideoView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"/>
+
+
+    <com.jsibbold.zoomage.ZoomageView
+        android:id="@+id/myZoomageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zoomage_restrictBounds="false"
+        app:zoomage_animateOnReset="true"
+        app:zoomage_autoResetMode="UNDER"
+        app:zoomage_autoCenter="true"
+        app:zoomage_zoomable="true"
+        app:zoomage_translatable="true"
+        app:zoomage_minScale="0.6"
+        android:visibility="gone"
+        app:zoomage_maxScale="8"
+        />
+    <ImageView
+        android:id="@+id/video_play_pause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/song_pause_icon"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

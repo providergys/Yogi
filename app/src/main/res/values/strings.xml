@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Yogi</string>
+    <string name="facebook_app_id">2117118041845224</string>
+    <string name="fb_login_protocol_scheme">fb1154906181316462</string>
+    <string name="title_activity_calender">Calender</string>
+    <string name="mailList">Mailing List</string>
+    <string name="changePassword">Change Password</string>
+    <string name="send">Send</string>
+    <string name="askAQuestion">Ask a question</string>
+    <string name="intro">Introduction</string>
+    <string name="share">Share</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="submit">Submit</string>
+    <string name="confirm">Confirm</string>
+    <string name="emailId">Email id&#8230;</string>
+    <string name="forgetPassword">Forget Password?</string>
+    <string name="donate">Donate</string>
+    <string name="readMore">Read more&#8230;</string>
+    <string name="createEvent">Create Event</string>
+    <string name="event">Event</string>
+    <string name="time">Time</string>
+    <string name="eventDescription">Event Description</string>
+    <string name="kdp">KDP original Text - HSY Favourites</string>
+    <string name="email">Email</string>
+    <string name="signIn">Sign in</string>
+    <string name="visitAsGuest">Visit As a Guest</string>
+    <string name="createAccount">Create Account</string>
+    <string name="or">or</string>
+    <string name="connectWithUs">Connect with us</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="payPal">PayPal</string>
+    <string name="signUp">Sign Up</string>
+    <string name="userName">User name</string>
+    <string name="reEnterPassword">Re enter Password</string>
+    <string name="contactNo">Contact Number</string>
+    <string name="card">Card</string>
+    <string name="payWith">Pay With:</string>
+    <string name="alreadyHaveAnAccount">Already have an account?</string>
+    <string name="visitAsAGuest">Visit as a Guest</string>
+    <string name="dharmaName">Dharma name</string>
+    <string name="obtainedOrdination">Obtained Ordination</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="yamataka">Yamataka</string>
+    <string name="sixteenDroplets">16 Droplets</string>
+    <string name="heruka">Heruka</string>
+    <string name="nA">N.A.</string>
+    <string name="mobile">Mobile</string>
+    <string name="countryOfResidence">Country of Residence:</string>
+    <string name="singapore">Singapore</string>
+    <string name="eastMalaysia">East Malaysia</string>
+    <string name="westMalaysia">West Malaysia</string>
+    <string name="china">China</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="date">Date:</string>
+    <string name="iAmInterestedInEvents">I am interested in events:</string>
+    <string name="dharmaQuiz">Dharma Quiz</string>
+    <string name="home">Home</string>
+    <string name="gallery">Gallery</string>
+    <string name="library">Library</string>
+    <string name="calendar">Calendar</string>
+    <string name="faqs">FAQs</string>
+    <string name="contactUs">Contact Us</string>
+    <string name="myPlaylist">My Playlist</string>
+    <string name="engageUs">Engage Us</string>
+    <string name="qrCode">QR Code Scanner</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="dharmaBooks">Dharma Books</string>
+    <string name="audioBooks">Audio Books</string>
+    <string name="songs">Songs</string>
+    <string name="videos">Video</string>
+    <string name="changeLanguageCh">Change Language</string>
+    <string name="changeLanguageEN">Change Language(English)</string>
+    <string name="quizLevels">Quiz Levels</string>
+    <string name="changeLanguage">Change Language</string>
+    <string name="broadcasting">Live Video Broadcasting</string>
+<!--   // <string name="broadcasting">Live Video Broadcasting</string>-->
+    <string name="reciever_act">Watch Live Video</string>
+
+  <!--  验水平
+
+    更改语言-->
+
+
+</resources>

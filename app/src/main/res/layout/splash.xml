@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.yogi_app.activity.MainActivity">
+
+    <pl.droidsonroids.gif.GifTextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="230dp"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="180dp"
+        android:indeterminate="false"
+        android:maxHeight="2dip"
+        android:minHeight="2dip"
+        android:progress="44"
+        android:progressDrawable="@drawable/progress_shape" />
+
+    <!--    <com.jetradarmobile.snowfall.SnowfallView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:snowflakesNum="80"
+            app:snowflakeAlphaMin="50"
+            app:snowflakeAlphaMax="80"
+            app:snowflakeAngleMax="5"
+            app:snowflakeSizeMin="8dp"
+            app:snowflakeSizeMax="30dp"
+            app:snowflakeSpeedMin="4"
+            app:snowflakeSpeedMax="10"
+            app:snowflakesFadingEnabled="true"
+            app:snowflakesAlreadyFalling="false"
+            app:snowflakeImage="@drawable/snowflake"
+            />-->
+</RelativeLayout>

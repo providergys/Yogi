@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/poprootll"
+    android:layout_width="300dp"
+    android:layout_height="270dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <TextView
+        android:id="@+id/titlepop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:text="Choose language"
+        android:textColor="@color/colorPrimary" />
+
+
+    <RelativeLayout
+        android:id="@+id/rel_english_lay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/english_flag"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+       android:layout_centerVertical="true"
+
+            android:background="@drawable/english"
+         />
+
+
+            <TextView
+                android:id="@+id/editTextOtp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:hint="English"
+                android:inputType="text"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/english_flag"
+                android:layout_toLeftOf="@+id/check_box_english"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:textColor="#000"
+                />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/check_box_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:buttonTint="@color/colorPrimary"
+            />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_chiense_lay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/chinese_flag"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+
+            android:background="@drawable/china"
+            />
+
+
+        <TextView
+            android:id="@+id/fdgggfd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Chinese"
+            android:inputType="text"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/chinese_flag"
+            android:layout_toLeftOf="@+id/check_box_cheinese"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:textColor="#000"
+            />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/check_box_cheinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            app:buttonTint="@color/colorPrimary"
+            />
+
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/login_button"
+        android:textColor="@color/whitecolor"
+        android:layout_marginTop="15dp"
+
+        android:text="Submit"/>
+</LinearLayout>
+

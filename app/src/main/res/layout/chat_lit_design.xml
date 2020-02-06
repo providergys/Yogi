@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relLayout21"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginTop="2dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="4sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/chat_name_container"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="1sp"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/chat_list_design_card_view_style"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/profile_img_list"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintCircleRadius="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/profile_name_list"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/profile_name_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:maxLength="12"
+            android:maxLines="2"
+            android:paddingLeft="5sp"
+            android:paddingRight="3sp"
+            android:text="Welcome"
+            android:textColor="@color/paymentsdk_color_black"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profile_img_list"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/chat_name_container"
+        android:gravity="center"
+        android:padding="@dimen/padding_5dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linearLayout_chat_in_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_list_design_card_view_style"
+        android:gravity="center"
+        android:layout_marginEnd="10dp"
+        android:padding="@dimen/padding_5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_comments_date_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="1sp"
+            android:paddingLeft="8sp"
+            android:textColor="@color/grey1"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            />
+
+        <ImageView
+            android:id="@+id/chat_in_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:id="@+id/tv_comments_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="8sp"
+            android:paddingEnd="8sp"
+
+            android:textColor="@color/paymentsdk_color_black"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

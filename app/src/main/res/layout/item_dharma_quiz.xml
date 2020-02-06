@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/tvQuesNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 "
+            android:padding="4dp"
+            android:textColor="@color/whitecolor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:padding="4dp"
+            android:text="What is the Dharma music serie"
+            android:textColor="@color/whitecolor"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imgQuestionMark"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@id/tvQuestion"
+            android:padding="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_question"
+            android:tint="@color/whitecolor" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginLeft="15dp"
+        android:weightSum="2">
+
+        <CheckBox
+            android:id="@+id/chkboxOption1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minLines="3"
+            android:padding="5dp"
+            android:text="serie1"
+            android:textColor="@color/whitecolor" />
+
+        <CheckBox
+            android:id="@+id/chkboxOption2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minLines="3"
+            android:padding="5dp"
+            android:text="serie2"
+            android:textColor="@color/whitecolor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginLeft="15dp"
+        android:weightSum="2">
+
+        <CheckBox
+            android:id="@+id/chkboxOption3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scrollHorizontally="false"
+            android:text="serie3"
+            android:padding="5dp"
+            android:textColor="@color/whitecolor" />
+
+        <CheckBox
+            android:id="@+id/chkboxOption4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="serie4"
+            android:padding="5dp"
+            android:textColor="@color/whitecolor" />
+    </LinearLayout>
+
+</LinearLayout>

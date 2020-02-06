@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="left">
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_page_bg"
+        tools:context=".activity.YogiAppFSDesign">
+
+        <com.jetradarmobile.snowfall.SnowfallView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:snowflakeAlphaMax="80"
+            app:snowflakeAlphaMin="50"
+            app:snowflakeAngleMax="5"
+            app:snowflakeImage="@drawable/snowflake"
+            app:snowflakeSizeMax="30dp"
+            app:snowflakeSizeMin="8dp"
+            app:snowflakeSpeedMax="10"
+            app:snowflakeSpeedMin="4"
+            app:snowflakesAlreadyFalling="false"
+            app:snowflakesFadingEnabled="true"
+            app:snowflakesNum="80" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:weightSum="3">
+            <TextView
+                android:layout_weight=".2"
+                android:id="@+id/redbar_tv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1.4">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/menu_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:src="@drawable/menu_icon" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="47dp"
+                        android:src="@drawable/guru_pic" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/transparent_strip" />
+
+                        <TextView
+                            android:id="@+id/tvTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:paddingBottom="5dp"
+                            android:paddingEnd="15dp"
+                            android:paddingStart="20dp"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            android:text="This is yogi app. This is yogi app"
+                            android:textColor="#ffff"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvSubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/intro"
+                    android:textColor="#fff"
+                    android:textSize="21sp" />
+                <TextView
+                    android:id="@+id/tvSubTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:visibility="invisible"
+                    />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="14dp">
+
+                        <TextView
+                            android:id="@+id/tvIntro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingEnd="20dp"
+                            android:paddingStart="20dp"
+                            android:text="Intoduction Intoduction Intoduction Intoduction Intoduction"
+                            android:textColor="#fff"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/navigation_drawer_layout"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/blur_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="@dimen/margin_10dp">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="20dp"
+
+                android:src="@drawable/back_icon" />
+
+            <RelativeLayout
+                android:id="@+id/rel_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/imgSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/setting_icon" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/drawer_profile_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/guru_pic"
+                    local:civ_border_color="#EEEEEE"
+                    local:civ_border_width="2dp"
+                    local:civ_shadow="true"
+                    local:civ_shadow_color="#8BC34A"
+                    local:civ_shadow_radius="10" />
+
+                <ImageView
+                    android:id="@+id/imgSignOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/logout_icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/navigation_drawer_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_main"
+                android:gravity="center"
+                android:text="Chris martin"
+                android:textColor="@color/whitecolor" />
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/categoriesleft_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginTop="20dp"
+
+            android:background="@null"
+            android:choiceMode="singleChoice"
+            android:divider="@null" />
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

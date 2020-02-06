@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".banbuser.CameraBroadCastActivity">
+    <com.jetradarmobile.snowfall.SnowfallView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:snowflakeAlphaMax="80"
+        app:snowflakeAlphaMin="50"
+        app:snowflakeAngleMax="5"
+        app:snowflakeImage="@drawable/snowflake"
+        app:snowflakeSizeMax="30dp"
+        app:snowflakeSizeMin="8dp"
+        app:snowflakeSpeedMax="10"
+        app:snowflakeSpeedMin="4"
+        app:snowflakesAlreadyFalling="false"
+        app:snowflakesFadingEnabled="true"
+        app:snowflakesNum="80"
+       />
+
+    <com.bambuser.broadcaster.SurfaceViewWithAutoAR
+        android:id="@+id/PreviewSurfaceView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/BroadcastButton"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/back_btnt" />
+
+    <Button android:id="@+id/BroadcastButton"
+        android:text="Broadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:src="@drawable/back_icon"
+        android:padding="@dimen/padding_5dp"
+        android:tint="@color/white"/>
+    <ImageView
+        android:id="@+id/back_btnt"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:src="@drawable/back_icon"
+        android:padding="@dimen/padding_5dp"
+        android:tint="@color/colorPrimary"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

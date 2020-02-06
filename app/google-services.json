@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "500136994429",
+    "firebase_url": "https://yogiproject-5f51d.firebaseio.com",
+    "project_id": "yogiproject-5f51d",
+    "storage_bucket": "yogiproject-5f51d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500136994429:android:3feee5ffad6fb2e0",
+        "android_client_info": {
+          "package_name": "com.yogi_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500136994429-98gnkjt7uv9llp6avii9jhgp5tb7evt4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4dIm5QsxBV10JDSYfeg3peLEvYtTayZQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

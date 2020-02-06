@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/rel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:id="@+id/signupheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/signUp"
+                android:textColor="@color/whitecolor"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imgBackPress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="20dp"
+                android:src="@drawable/back_icon" />
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/logo" />
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/icon"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/email_border"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="20dp"
+                android:hint="@string/userName"
+                android:padding="10dp"
+                android:textColor="@color/whitecolor"
+                android:textColorHint="@color/whitecolor" />
+
+            <EditText
+                android:id="@+id/dharmaName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/user_name"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/email_border"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="20dp"
+                android:hint="@string/dharmaName"
+                android:padding="10dp"
+                android:textColor="@color/whitecolor"
+                android:textColorHint="@color/whitecolor" />
+
+            <EditText
+                android:id="@+id/user_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/dharmaName"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/email_border"
+                android:drawableLeft="@drawable/email_icon"
+                android:drawablePadding="20dp"
+                android:hint="@string/email"
+                android:padding="10dp"
+                android:textColor="@color/whitecolor"
+                android:textColorHint="@color/whitecolor" />
+
+            <EditText
+                android:id="@+id/user_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/user_email"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/email_border"
+                android:drawableLeft="@drawable/password_icon"
+                android:drawablePadding="20dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/whitecolor"
+                android:textColorHint="@color/whitecolor" />
+
+            <EditText
+                android:id="@+id/contactNo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/user_password"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/email_border"
+                android:drawableLeft="@drawable/mobile_icon"
+                android:drawablePadding="20dp"
+                android:hint="@string/contactNo"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/whitecolor"
+                android:textColorHint="@color/whitecolor" />
+
+            <LinearLayout
+                android:id="@+id/ll_ordination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contactNo"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/email_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvOrdinationLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/obtainedOrdination"
+                    android:padding="5dp"
+                    android:textColor="@color/whitecolor"
+                    android:textColorHint="@color/whitecolor"
+                    android:textSize="18sp" />
+
+
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        >
+                    <RadioButton
+                        android:id="@+id/radioYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textColor="@color/whitecolor" />
+
+                    <RadioButton
+                        android:id="@+id/radioNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:textColor="@color/whitecolor" />
+                    </RadioGroup>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ll_ordination"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/login_button"
+                android:text="@string/signUp"
+                android:textColor="@color/whitecolor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="50dp">
+
+                <TextView
+                    android:id="@+id/already_account_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/alreadyHaveAnAccount"
+                    android:textColor="@color/whitecolor"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/sign_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/already_account_txt"
+                    android:paddingLeft="15dp"
+                    android:text="@string/signIn"
+                    android:textColor="@color/whitecolor"
+                    android:textSize="15dp"
+
+                    />
+            </RelativeLayout>
+            <!--    <com.jetradarmobile.snowfall.SnowfallView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:snowflakesNum="80"
+                    app:snowflakeAlphaMin="50"
+                    app:snowflakeAlphaMax="80"
+                    app:snowflakeAngleMax="5"
+                    app:snow flakeSizeMin="8dp"
+                    app:snowflakeSizeMax="30dp"
+                    app:snowflakeSpeedMin="4"
+                    app:snowflakeSpeedMax="10"
+                    app:snowflakesFadingEnabled="true"
+                    app:snowflakesAlreadyFalling="false"
+                    app:snowflakeImage="@drawable/snowflake"
+                    />-->
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

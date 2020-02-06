@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whitecolor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgs_flags"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+        />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/country_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Malaysia"
+                    android:textColor="@color/edittextcolor"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/address_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="address"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/phone_no_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="7878787878"
+                    android:textColor="#00a2ff"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

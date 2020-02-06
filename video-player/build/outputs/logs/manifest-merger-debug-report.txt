@@ -1,0 +1,43 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml:2:1-17:12
+INJECTED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml:2:1-17:12
+INJECTED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml:2:1-17:12
+	package
+		ADDED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml:3:5-47
+		INJECTED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml
+		INJECTED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml:5:5-66
+	android:name
+		ADDED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml:6:22-77
+application
+ADDED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml:8:5-15:19
+activity#com.appunite.appunitevideoplayer.PlayerActivity
+ADDED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml:9:9-13:20
+	android:configChanges
+		ADDED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml:11:13-83
+	android:theme
+		ADDED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml:12:13-47
+	android:name
+		ADDED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml:10:13-43
+uses-sdk
+INJECTED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml
+INJECTED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml
+INJECTED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml
+INJECTED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml
+		ADDED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml
+		INJECTED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml
+		ADDED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml
+		INJECTED from E:\rajat\Yogi app3\latest yogi app\Yogi\video-player\src\main\AndroidManifest.xml

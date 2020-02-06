@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+<TextView
+    android:id="@+id/tvTitle"
+    android:gravity="center"
+    android:padding="5dp"
+    android:textColor="@color/whitecolor"
+    android:textSize="17sp"
+    android:text="@string/mailList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/outline_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgUser"
+            android:padding="6dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/user_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    <EditText
+        android:layout_toRightOf="@id/imgUser"
+        android:hint="Chinese name"
+        android:textColorHint="@color/whitecolor"
+        android:textSize="18sp"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:background="@null"
+        android:textColor="@color/whitecolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/outline_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgEngName"
+            android:padding="6dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/user_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <EditText
+            android:layout_toRightOf="@id/imgEngName"
+            android:hint="English Name/Alias"
+            android:textColorHint="@color/whitecolor"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:background="@null"
+            android:textColor="@color/whitecolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/outline_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgPhoneNo"
+            android:padding="6dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/user_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <EditText
+            android:layout_toRightOf="@+id/imgPhoneNo"
+            android:hint="Phone number"
+            android:textColorHint="@color/whitecolor"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:background="@null"
+            android:textColor="@color/whitecolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/outline_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgMail"
+            android:padding="6dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/user_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <EditText
+            android:layout_toRightOf="@id/imgMail"
+            android:hint="Post and Email"
+            android:textColorHint="@color/whitecolor"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:background="@null"
+            android:textColor="@color/whitecolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <Button
+        android:text="Submit"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/whitecolor"
+        android:backgroundTint="#0C9200"
+        android:background="@drawable/outline_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

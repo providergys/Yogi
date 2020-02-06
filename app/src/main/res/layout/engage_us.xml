@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="left">
+    <RelativeLayout
+        android:id="@+id/relative" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whitecolor"
+        tools:context="com.yogi_app.activity.ContactUs">
+        <RelativeLayout
+            android:id="@+id/contactus_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            >
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/menu_icon" />
+            <TextView
+                android:id="@+id/gallery_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/engageUs"
+                android:textColor="@color/whitecolor"
+                android:layout_centerInParent="true"
+                android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_icon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:textSize="18sp" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/engageus_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contactus_toolbar"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/navigation_drawer_layout"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/blur_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+
+            >
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="20dp"
+                android:src="@drawable/back_icon"/>
+
+            <RelativeLayout
+                android:id="@+id/rel_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:id="@+id/imgSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/setting_icon"/>
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/drawer_profile_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+
+                    android:src="@drawable/guru_pic"
+                    local:civ_border_color="#EEEEEE"
+                    local:civ_border_width="2dp"
+                    local:civ_shadow="true"
+                    local:civ_shadow_color="#8BC34A"
+                    local:civ_shadow_radius="10" />
+                <ImageView
+                    android:id="@+id/imgSignOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/logout_icon"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/navigation_drawer_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Chris martin"
+                android:layout_below="@+id/rel_main"
+                android:textColor="@color/whitecolor" />
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/categoriesleft_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginTop="20dp"
+            android:choiceMode="singleChoice"
+            android:background="@null"
+            android:divider="@null"/>
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>
+

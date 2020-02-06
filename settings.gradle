@@ -1,0 +1,2 @@
+include ':app', ':zxing-android-embedded', ':libbambuser-0.9.18'
+include ':app', ':video-player'

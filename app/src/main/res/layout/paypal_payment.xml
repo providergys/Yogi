@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/payWith"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/whitecolor"
+        android:textSize="20sp" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/card"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp"
+        android:text="@string/card"
+        android:textColor="@color/whitecolor"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/logincolor" />
+
+    <TextView
+        android:id="@+id/paypal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="@string/payPal"
+        android:textColor="@color/whitecolor"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/logincolor" />
+
+    <TextView
+        android:id="@+id/ali_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/whitecolor"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="Ali Pay"
+        android:textSize="16sp" />
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#55000000" />-->
+    <!--<TextView-->
+    <!--android:id="@+id/aliPay"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="?attr/selectableItemBackground"-->
+    <!--android:clickable="true"-->
+    <!--android:padding="10dp"-->
+    <!--android:text="AliPay"-->
+    <!--android:textSize="16sp" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#55000000" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:paddingTop="15dp"-->
+    <!--android:text="Response:"-->
+    <!--android:textSize="20sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/result"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="?attr/selectableItemBackground"-->
+    <!--android:clickable="true"-->
+    <!--android:padding="10dp"-->
+    <!--android:textSize="16sp"-->
+    <!--tools:text="result" />-->
+
+</LinearLayout>

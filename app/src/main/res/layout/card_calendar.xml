@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:layout_marginTop="7dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="10dp"
+        android:text="09 AM"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/tvEventTitle"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/imgHeart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvTime"
+        android:paddingLeft="20dp"
+        android:text="Overseas camp"
+        android:textColor="#000" />
+    <ImageView
+        android:id="@+id/imgHeart"
+        android:tag="2"
+        android:padding="4dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+</RelativeLayout>
